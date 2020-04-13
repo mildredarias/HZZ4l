@@ -1,3 +1,7 @@
 4lep
 .ipynb_checkpoints
 atlas-outreach-cpp-framework-13tev-master
+.*
+*.pcm
+*.d
+*.so
