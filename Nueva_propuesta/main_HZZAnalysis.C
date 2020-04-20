@@ -29,15 +29,22 @@ void main_HZZAnalysis(int proof=0, int option=0)
 
   if (proof == 1)  TProof::Open("");
   
-  
+    
   if (option==1 || option==0){
     TChain* chain_data = new TChain("mini");
     chain_data->AddFile(path+"Data/data_A.4lep.root");
     chain_data->AddFile(path+"Data/data_B.4lep.root");
     chain_data->AddFile(path+"Data/data_C.4lep.root");
     chain_data->AddFile(path+"Data/data_D.4lep.root");
+    
+    // tell the chain that we want to use PROOF
     if (proof == 1)  chain_data->SetProof();
+    
+    // run the selector
     //chain_data->Process("HZZAnalysis.C+","data");
+    chain_data->Process("Test_Analisys.ipynb","data");
+    
+    //Proceso (): Process all entries in this chain, calling functions in filename. https://root.cern.ch/doc/master/classTTree.html#a6325b77dddf29d81480e0f9ab24c7a85
   }
    
   
