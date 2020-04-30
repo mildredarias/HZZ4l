@@ -6,6 +6,7 @@
 #include "TFile.h"
 #include "TProof.h"
 
+
 void main_HZZAnalysis(int proof=0, int option=0)
 {
   // path to your local directory *or* URL, please change the default one!
@@ -42,9 +43,9 @@ void main_HZZAnalysis(int proof=0, int option=0)
     
     // run the selector
     //chain_data->Process("HZZAnalysis.C+","data");
-    chain_data->Process("Test_Analisys.ipynb","data");
-    
+    chain_data->Process("entrega_de_datos.C+","data");
     //Proceso (): Process all entries in this chain, calling functions in filename. https://root.cern.ch/doc/master/classTTree.html#a6325b77dddf29d81480e0f9ab24c7a85
+    chain_data->Scan(); //Bandera
   }
    
   
