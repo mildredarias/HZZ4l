@@ -5,6 +5,7 @@
 #include "TChain.h"
 #include "TFile.h"
 #include "TProof.h"
+#include "TString.h"
 
 
 TChain *main_HZZAnalysis(int proof, TString s)
