@@ -8,7 +8,7 @@
 #include "TString.h"
 
 
-TChain *main_HZZAnalysis(int proof, TString s)
+TChain *main_HZZAnalysis(int proof,TString s)
 {
   // path to your local directory *or* URL, please change the default one!
   /* Local path example */
