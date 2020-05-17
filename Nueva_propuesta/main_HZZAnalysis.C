@@ -19,8 +19,9 @@ TChain *main_HZZAnalysis(int proof,TString s)
     
   /* The URL to the ATLAS Open Data website repository */
   //TString path  = "http://www.universidad.ch/ATLAS/outreach/open-data-2020/4lep/";
-  //TString path2 = "http://www.universidad.ch/ATLAS/outreach/open-data-2020/2lep/"; 
-  TString path2 = "https://atlas-opendata.web.cern.ch/atlas-opendata/samples/2020/2lep/";
+  //TString path2 = "http://www.universidad.ch/ATLAS/outreach/open-data-2020/2lep/";
+  TString path2 = "/media/sf_carpeta_compartida_MV/2lep/";
+  //TString path2 = "https://atlas-opendata.web.cern.ch/atlas-opendata/samples/2020/2lep/";
     
   
   //***************************************************************************************************//
