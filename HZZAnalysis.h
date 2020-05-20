@@ -12,8 +12,8 @@
 // Headers needed by this particular selector
 #include "vector"
 
-class HZZAnalysis : public TSelector {
-  public :
+class HZZAnalysis : public TSelector {/*Herencia de la clase TSelector*/
+  public : //Métodos
   TTree          *fChain;   //!pointer to the analyzed TTree or TChain
 
   //////////////////////////////////////////////////////////
@@ -147,10 +147,23 @@ class HZZAnalysis : public TSelector {
   TBranch        *b_met_et_syst;   //!
   TBranch        *b_jet_pt_syst;   //!
 
+  //Constructor de la clase heredada (fChain, osea TChain) (Para inicializar atributos)
   
-    
   HZZAnalysis(TTree * =0) : fChain(0) { }
+  
+  //Fin. Constructor de la clase heredada
+    
+  //Virtual, es una función de polimorfismo
+    
+  //Destructor (Eliminar todos los objetos de la clase)
+  
   virtual ~HZZAnalysis() { }
+  
+  //Fin. Destructor
+  
+  //Getters: mostrar valore. Setters: establecer/dar valores.
+  
+  //Funciones
   virtual Int_t   Version() const { return 2; }
   virtual void    Begin(TTree *tree);
   virtual void    SlaveBegin(TTree *tree);
